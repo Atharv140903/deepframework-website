@@ -1,0 +1,63 @@
+/* DeepFramework brand tokens. Kit names (--df-*), extended with the
+   website-only colours from the canvas style guide. */
+:root {
+  --df-violet: #2a1b5c;
+  --df-coral: #ff6b5a;
+  --df-coral-text: #b8372a; /* coral that passes 4.5:1 for small text and focus rings */
+  --df-ink: #151325;
+  --df-slate: #5a5670;
+  --df-mist: #f6f4fa;
+  --df-white: #ffffff;
+  --df-tint: #efebf7;
+  --df-line: #e1ddea;
+  --df-on-violet-muted: #d9d3ee;
+  --df-night: #120c26;
+
+  --df-font-display: var(--font-archivo), "Helvetica Neue", Arial, sans-serif;
+  --df-font-body: var(--font-plex-sans), "Segoe UI", Arial, sans-serif;
+  --df-font-mono: var(--font-plex-mono), ui-monospace, Menlo, monospace;
+
+  --df-content-width: 1200px;
+  --df-gutter: clamp(20px, 5vw, 64px);
+  --df-section-pad: clamp(48px, 6vw, 80px);
+  --df-radius-sm: 6px;
+  --df-radius-card: 12px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--df-mist);
+  color: var(--df-ink);
+  font-family: var(--df-font-body);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--df-violet);
+}
+
+a:hover {
+  color: var(--df-ink);
+}
+
+:focus-visible {
+  outline: 3px solid var(--df-coral-text);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
