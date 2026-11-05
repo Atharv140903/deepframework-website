@@ -1,0 +1,46 @@
+.header {
+  border-bottom: 1px solid var(--df-line);
+  background: var(--df-mist);
+}
+
+.inner {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  text-decoration: none;
+  color: var(--df-ink);
+}
+
+.home:hover {
+  color: var(--df-ink);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--df-slate);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.link:hover {
+  color: var(--df-ink);
+}

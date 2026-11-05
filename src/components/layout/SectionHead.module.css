@@ -1,0 +1,26 @@
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 40px;
+  align-items: flex-end;
+}
+
+.title {
+  margin: 0;
+  flex: 1 1 280px;
+  max-width: 360px;
+  font-family: var(--df-font-display);
+  font-weight: 800;
+  font-size: clamp(28px, 3.4vw, 40px);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+.intro {
+  margin: 0;
+  flex: 999 1 360px;
+  min-width: 0;
+  max-width: 36em;
+  font-size: 17px;
+  color: var(--df-slate);
+}

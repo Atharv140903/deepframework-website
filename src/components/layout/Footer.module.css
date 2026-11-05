@@ -1,0 +1,14 @@
+.footer {
+  border-top: 1px solid var(--df-line);
+}
+
+.inner {
+  padding-top: 28px;
+  padding-bottom: 28px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  color: var(--df-slate);
+  font-size: 14px;
+}

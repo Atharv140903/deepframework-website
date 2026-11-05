@@ -1,0 +1,16 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--df-font-display);
+  font-size: 21px;
+  letter-spacing: -0.02em;
+}
+
+.deep {
+  font-weight: 800;
+}
+
+.framework {
+  font-weight: 500;
+}

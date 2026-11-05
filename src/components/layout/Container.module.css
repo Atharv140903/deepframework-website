@@ -1,0 +1,6 @@
+.container {
+  max-width: var(--df-content-width);
+  margin: 0 auto;
+  padding-left: var(--df-gutter);
+  padding-right: var(--df-gutter);
+}
