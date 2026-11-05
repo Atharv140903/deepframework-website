@@ -1,0 +1,80 @@
+.inner {
+  padding-top: clamp(40px, 6vw, 80px);
+  padding-bottom: clamp(40px, 6vw, 80px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  align-items: center;
+}
+
+.text {
+  flex: 1 1 480px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.eyebrow {
+  margin: 0;
+  font-family: var(--df-font-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--df-slate);
+}
+
+.title {
+  margin: 0;
+  font-family: var(--df-font-display);
+  font-weight: 800;
+  font-size: clamp(38px, 5vw, 64px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.accent {
+  color: var(--df-violet);
+}
+
+.lead {
+  margin: 0;
+  font-size: 18px;
+  color: var(--df-slate);
+  max-width: 34em;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.primary {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 12px 20px;
+  border-radius: var(--df-radius-sm);
+  background: var(--df-violet);
+  color: var(--df-white);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.primary:hover {
+  /* Style guide: primary darkens 5% on hover. */
+  background: color-mix(in srgb, var(--df-violet) 95%, black);
+  color: var(--df-white);
+}
+
+.industries {
+  margin: 12px 0 0;
+  font-family: var(--df-font-mono);
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--df-slate);
+}

@@ -1,0 +1,116 @@
+.card {
+  flex: 1 1 380px;
+  min-width: 0;
+  background: var(--df-white);
+  border: 1px solid var(--df-line);
+  border-radius: var(--df-radius-card);
+  overflow: hidden;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  padding: 14px 20px;
+  background: var(--df-tint);
+  border-bottom: 1px solid var(--df-line);
+}
+
+.badge {
+  font-family: var(--df-font-mono);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.example {
+  font-size: 12px;
+  color: var(--df-slate);
+}
+
+.body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.rows {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  gap: 10px 14px;
+  font-size: 14px;
+}
+
+/* Each dt/dd pair joins the parent grid directly. */
+.row {
+  display: contents;
+}
+
+.label {
+  font-family: var(--df-font-mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--df-slate);
+  padding-top: 2px;
+}
+
+.value {
+  margin: 0;
+}
+
+.timeline {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 4px;
+  font-size: 12px;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.bar {
+  height: 8px;
+  border-radius: 4px;
+  background: #b9b2d6;
+}
+
+.live {
+  background: var(--df-coral);
+}
+
+.when {
+  font-family: var(--df-font-mono);
+  font-weight: 500;
+}
+
+.phase {
+  color: var(--df-slate);
+}
+
+.outcome {
+  margin: 0;
+  border-top: 1px dashed var(--df-line);
+  padding-top: 14px;
+  font-size: 14px;
+  color: var(--df-slate);
+}
+
+.outcome b {
+  color: var(--df-ink);
+  font-weight: 600;
+}
+
+.note {
+  margin: 0;
+  padding: 0 20px 14px;
+  font-size: 11px;
+  color: var(--df-slate);
+}
