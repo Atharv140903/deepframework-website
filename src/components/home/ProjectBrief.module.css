@@ -86,9 +86,12 @@
   background: var(--df-coral);
 }
 
+/* Keep "Week 2–3" on one line; shrink a touch on very narrow phones so it fits. */
 .when {
   font-family: var(--df-font-mono);
   font-weight: 500;
+  font-size: clamp(11px, 3.2vw, 12px);
+  white-space: nowrap;
 }
 
 .phase {
