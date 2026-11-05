@@ -1,0 +1,32 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+.item {
+  flex: 1 1 260px;
+  min-width: 0;
+  border-top: 1px solid var(--df-line);
+  padding-top: 16px;
+}
+
+.number {
+  font-family: var(--df-font-mono);
+  font-size: 13px;
+  color: var(--df-coral-text);
+}
+
+.title {
+  margin: 6px 0 8px;
+  font-family: var(--df-font-display);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.body {
+  margin: 0;
+  color: var(--df-slate);
+  font-size: 15px;
+}

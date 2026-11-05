@@ -1,0 +1,41 @@
+/* 1px gaps over a line-coloured background draw the grid's dividers. */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+  background: var(--df-line);
+  border: 1px solid var(--df-line);
+  border-radius: var(--df-radius-card);
+  overflow: hidden;
+}
+
+.cell {
+  flex: 1 1 320px;
+  min-width: 0;
+  background: var(--df-white);
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.title {
+  margin: 0;
+  font-family: var(--df-font-display);
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.body {
+  margin: 0;
+  color: var(--df-slate);
+  font-size: 15px;
+}
+
+.tags {
+  margin-top: auto;
+  padding-top: 8px;
+  font-family: var(--df-font-mono);
+  font-size: 12px;
+  color: var(--df-violet);
+}

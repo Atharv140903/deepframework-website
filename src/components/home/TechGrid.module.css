@@ -1,0 +1,30 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px 24px;
+}
+
+.item {
+  flex: 1 1 300px;
+  min-width: 0;
+  border-top: 1px solid #4a3b7f; /* violet divider from the canvas */
+  padding-top: 16px;
+}
+
+/* Human in the loop: the coral "result" accent, as in the canvas. */
+.item:last-child {
+  border-top-color: var(--df-coral);
+}
+
+.title {
+  margin: 0 0 6px;
+  font-family: var(--df-font-display);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.body {
+  margin: 0;
+  color: var(--df-on-violet-muted);
+  font-size: 15px;
+}

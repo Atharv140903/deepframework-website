@@ -1,0 +1,21 @@
+.section {
+  border-top: 1px solid var(--df-line);
+}
+
+.band {
+  background: var(--df-violet);
+  color: var(--df-white);
+}
+
+/* Coral passes 3:1 against violet; the darker coral-text would not. */
+.band :focus-visible {
+  outline-color: var(--df-coral);
+}
+
+.inner {
+  padding-top: var(--df-section-pad);
+  padding-bottom: var(--df-section-pad);
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}

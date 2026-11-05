@@ -1,0 +1,33 @@
+.card {
+  flex: 1 1 300px;
+  min-width: 0;
+  background: var(--df-white);
+  border: 1px solid var(--df-line);
+  border-radius: var(--df-radius-card);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.industry {
+  margin: 0;
+  font-family: var(--df-font-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--df-slate);
+}
+
+.title {
+  margin: 0;
+  font-family: var(--df-font-display);
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.body {
+  margin: 0;
+  color: var(--df-slate);
+  font-size: 15px;
+}

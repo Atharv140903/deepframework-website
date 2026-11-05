@@ -1,0 +1,31 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+.item {
+  flex: 1 1 220px;
+  min-width: 0;
+}
+
+.title {
+  margin: 0 0 6px;
+  font-family: var(--df-font-display);
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.body {
+  margin: 0;
+  color: var(--df-slate);
+  font-size: 15px;
+}
+
+.security {
+  margin: 0;
+  padding: 18px 20px;
+  background: var(--df-tint);
+  border-radius: 10px;
+  font-size: 15px;
+}

@@ -1,0 +1,47 @@
+.steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+.step {
+  flex: 1 1 220px;
+  min-width: 0;
+  border-top: 3px solid var(--df-violet);
+  padding-top: 16px;
+}
+
+/* The last step (ongoing support) is the coral "result" accent. */
+.step:last-child {
+  border-top-color: var(--df-coral);
+}
+
+.label {
+  font-family: var(--df-font-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--df-slate);
+}
+
+.title {
+  margin: 6px 0 8px;
+  font-family: var(--df-font-display);
+  font-weight: 600;
+  font-size: 21px;
+}
+
+.body {
+  margin: 0;
+  color: var(--df-slate);
+}
+
+.duration {
+  display: block;
+  margin-top: 10px;
+  font-family: var(--df-font-mono);
+  font-size: 13px;
+}
