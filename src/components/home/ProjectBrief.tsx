@@ -1,12 +1,12 @@
 import { projectBrief } from "@/content/home";
 import styles from "./ProjectBrief.module.css";
 
-/** Example project card beside the hero: what a typical engagement looks like. */
+/** Example solution card beside the hero: what a typical engagement looks like. */
 export function ProjectBrief() {
   return (
-    <article aria-label="Example project brief" className={styles.card}>
+    <article aria-label="Example solution brief" className={styles.card}>
       <div className={styles.top}>
-        <b className={styles.badge}>PROJECT BRIEF</b>
+        <b className={styles.badge}>SOLUTION BRIEF</b>
         <span className={styles.example}>Example</span>
       </div>
       <div className={styles.body}>

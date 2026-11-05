@@ -34,7 +34,7 @@ export const projectBrief = {
   ],
   outcome:
     "defects are logged as they happen, and managers see the day's quality picture the same evening.",
-  note: "Illustrative example of how a project fits into existing systems",
+  note: "Illustrative example of how a solution fits into existing systems",
 };
 
 type Item = { title: string; body: string };
@@ -140,7 +140,7 @@ export const processSteps = {
   id: "process",
   title: "How we work",
   intro:
-    "We follow the same four steps on every project, from understanding the process to running it day to day.",
+    "We follow the same four steps on every engagement, from understanding the process to running it day to day.",
   steps: [
     {
       step: "Step 1",
@@ -198,7 +198,7 @@ export const examples = {
 export const principles = {
   id: "principles",
   title: "Our principles",
-  intro: "How we approach every project, whatever its size or industry.",
+  intro: "How we approach every engagement, whatever its size or industry.",
   items: [
     {
       title: "No rip and replace",
@@ -215,7 +215,7 @@ export const principles = {
     { title: "You own the work", body: "The code, models and setup we build for you belong to you." },
   ],
   security:
-    "Security basics on every project: role-based access, encrypted data in transit and at rest, audit logs, and deployment on your cloud or ours. We design each project around India's DPDP Act and your own security and industry requirements.",
+    "Security basics on every engagement: role-based access, encrypted data in transit and at rest, audit logs, and deployment on your cloud or ours. We design each solution around India's DPDP Act and your own security and industry requirements.",
 } satisfies Section & { items: Item[]; security: string };
 
 export const technology = {

@@ -18,9 +18,9 @@ test("hero has one CTA to solutions and no contact CTA", () => {
   expect(links[0]).toHaveAttribute("href", "/#solutions");
 });
 
-test("project brief is labelled as an example with four rows and a four-step timeline", () => {
+test("solution brief is labelled as an example with four rows and a four-step timeline", () => {
   render(<ProjectBrief />);
-  const card = screen.getByRole("article", { name: "Example project brief" });
+  const card = screen.getByRole("article", { name: "Example solution brief" });
   ["CLIENT", "PROBLEM", "WE BUILT", "FITS INTO"].forEach((label) =>
     expect(within(card).getByText(label)).toBeInTheDocument(),
   );
