@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>DeepFramework style guide</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;800&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 1200px; height: 1900px; box-sizing: border-box; padding: 56px; background: #F6F4FA; color: #151325; font-family: 'IBM Plex Sans', Arial, sans-serif; display: flex; flex-direction: column; gap: 32px;">
+  <div style="display: flex; flex-direction: column; gap: 6px;">
+    <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #5A5670;">For the React build</span>
+    <h1 style="margin: 0; font-family: Archivo, Arial, sans-serif; font-weight: 800; font-size: 40px; letter-spacing: -0.01em;">DeepFramework style guide</h1>
+    <p style="margin: 0; font-size: 16px; color: #3A3650; max-width: 60em;">Every value used on the website. Content width 1200 px, side padding clamp(20px, 5vw, 64px), section padding clamp(48px, 6vw, 80px) top and bottom, a 1 px Line border between sections. Layouts are flex rows that wrap, so they stack on phones without breakpoints.</p>
+  </div>
+
+  <section style="background: #FFFFFF; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 16px;">
+    <h2 style="margin: 0; font-family: 'IBM Plex Mono', Menlo, monospace; font-weight: 400; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5A5670;">Colour tokens</h2>
+    <div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px;">
+      <div style="display: flex; flex-direction: column; gap: 6px;"><div style="height: 80px; border-radius: 10px; background: #2A1B5C;"></div><b style="font-size: 14px;">violet</b><code style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5A5670;">#2A1B5C · buttons, logo, dark band</code></div>
+      <div style="display: flex; flex-direction: column; gap: 6px;"><div style="height: 80px; border-radius: 10px; background: #FF6B5A;"></div><b style="font-size: 14px;">coral</b><code style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5A5670;">#FF6B5A · bullets, accents only</code></div>
+      <div style="display: flex; flex-direction: column; gap: 6px;"><div style="height: 80px; border-radius: 10px; background: #B8372A;"></div><b style="font-size: 14px;">coral-text</b><code style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5A5670;">#B8372A · small coral text</code></div>
+      <div style="display: flex; flex-direction: column; gap: 6px;"><div style="height: 80px; border-radius: 10px; background: #151325;"></div><b style="font-size: 14px;">ink</b><code style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5A5670;">#151325 · body text</code></div>
+      <div style="display: flex; flex-direction: column; gap: 6px;"><div style="height: 80px; border-radius: 10px; background: #5A5670;"></div><b style="font-size: 14px;">muted</b><code style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5A5670;">#5A5670 · secondary text</code></div>
+      <div style="display: flex; flex-direction: column; gap: 6px;"><div style="height: 80px; border-radius: 10px; background: #F6F4FA; border: 1px solid #E1DDEA; box-sizing: border-box;"></div><b style="font-size: 14px;">mist</b><code style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5A5670;">#F6F4FA · page background</code></div>
+      <div style="display: flex; flex-direction: column; gap: 6px;"><div style="height: 80px; border-radius: 10px; background: #FFFFFF; border: 1px solid #E1DDEA; box-sizing: border-box;"></div><b style="font-size: 14px;">surface</b><code style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5A5670;">#FFFFFF · cards, form</code></div>
+      <div style="display: flex; flex-direction: column; gap: 6px;"><div style="height: 80px; border-radius: 10px; background: #EFEBF7;"></div><b style="font-size: 14px;">tint</b><code style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5A5670;">#EFEBF7 · brief header, notes</code></div>
+      <div style="display: flex; flex-direction: column; gap: 6px;"><div style="height: 80px; border-radius: 10px; background: #E1DDEA;"></div><b style="font-size: 14px;">line</b><code style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5A5670;">#E1DDEA · borders, dividers</code></div>
+      <div style="display: flex; flex-direction: column; gap: 6px;"><div style="height: 80px; border-radius: 10px; background: #D9D3EE;"></div><b style="font-size: 14px;">on-violet-muted</b><code style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5A5670;">#D9D3EE · text on violet</code></div>
+    </div>
+  </section>
+
+  <section style="background: #FFFFFF; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 18px;">
+    <h2 style="margin: 0; font-family: 'IBM Plex Mono', Menlo, monospace; font-weight: 400; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5A5670;">Type scale</h2>
+    <div style="display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 14px 24px; align-items: baseline;">
+      <code style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5A5670;">H1 · Archivo 800 · 64/1.05 · −2%</code><span style="font-family: Archivo, Arial, sans-serif; font-weight: 800; font-size: 64px; line-height: 1.05; letter-spacing: -0.02em;">AI that fits</span>
+      <code style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5A5670;">H2 · Archivo 800 · 40/1.1</code><span style="font-family: Archivo, Arial, sans-serif; font-weight: 800; font-size: 40px; line-height: 1.1;">What we build</span>
+      <code style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5A5670;">H3 card · Archivo 600 · 19–24</code><span style="font-family: Archivo, Arial, sans-serif; font-weight: 600; font-size: 20px;">Document AI</span>
+      <code style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5A5670;">Lead · Plex Sans 400 · 18/1.6</code><span style="font-size: 18px; line-height: 1.6; color: #5A5670;">We design and build custom AI for enterprises.</span>
+      <code style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5A5670;">Body · Plex Sans 400 · 15–16/1.6</code><span style="font-size: 16px; line-height: 1.6;">Read invoices, claims, contracts, reports and forms.</span>
+      <code style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5A5670;">Label · Plex Mono 400 · 12 · caps +8%</code><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #5A5670;">AI solutions for enterprise</span>
+    </div>
+  </section>
+
+  <div style="display: flex; gap: 24px;">
+    <section style="flex: 1 1 0; min-width: 0; background: #FFFFFF; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 18px;">
+      <h2 style="margin: 0; font-family: 'IBM Plex Mono', Menlo, monospace; font-weight: 400; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5A5670;">Buttons and chips</h2>
+      <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
+        <a href="#" style="background: #2A1B5C; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 15px; padding: 12px 20px; border-radius: 6px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Primary</a>
+        <a href="#" style="border: 1.5px solid #E1DDEA; color: #151325; text-decoration: none; font-weight: 600; font-size: 15px; padding: 12px 20px; border-radius: 6px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center; background: #FFFFFF;">Secondary</a>
+        <span style="font-size: 14px; padding: 6px 12px; border: 1px solid #E1DDEA; border-radius: 999px; background: #FFFFFF;">Chip</span>
+      </div>
+      <p style="margin: 0; font-size: 14px; color: #5A5670;">Radius 6 px, height 44 px minimum. Hover: primary darkens 5%, secondary border turns muted. Focus: 3 px coral outline, 2 px offset.</p>
+    </section>
+    <section style="flex: 1 1 0; min-width: 0; background: #FFFFFF; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 18px;">
+      <h2 style="margin: 0; font-family: 'IBM Plex Mono', Menlo, monospace; font-weight: 400; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5A5670;">Form field</h2>
+      <label for="sg-field" style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500;">Work email or WhatsApp<input id="sg-field" placeholder="name@company.com" style="font: 15px 'IBM Plex Sans', Arial, sans-serif; padding: 11px 12px; border: 1px solid #E1DDEA; border-radius: 6px; background: #F6F4FA; color: #151325;"></label>
+      <p style="margin: 0; font-size: 14px; color: #5A5670;">Fill mist, 1 px line border, radius 6 px, label 14 px medium above the field.</p>
+    </section>
+  </div>
+
+  <div style="display: flex; gap: 24px;">
+    <section style="flex: 1 1 0; min-width: 0; background: #FFFFFF; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 18px;">
+      <h2 style="margin: 0; font-family: 'IBM Plex Mono', Menlo, monospace; font-weight: 400; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5A5670;">Card</h2>
+      <article style="background: #FFFFFF; border: 1px solid #E1DDEA; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 10px;"><p style="margin: 0; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #5A5670;">Healthcare</p><h3 style="margin: 0; font-family: Archivo, Arial, sans-serif; font-weight: 600; font-size: 19px;">Insurance claim document reader</h3><p style="margin: 0; color: #5A5670; font-size: 15px;">Reads claim forms and flags missing items.</p></article>
+      <p style="margin: 0; font-size: 14px; color: #5A5670;">Radius 12 px, padding 24–28 px, 1 px line border, no shadow.</p>
+    </section>
+    <section style="flex: 1 1 0; min-width: 0; background: #FFFFFF; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 18px;">
+      <h2 style="margin: 0; font-family: 'IBM Plex Mono', Menlo, monospace; font-weight: 400; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5A5670;">Logo in the header</h2>
+      <div style="display: flex; gap: 16px;">
+        <div style="flex: 1 1 0; padding: 20px; border: 1px solid #E1DDEA; border-radius: 10px; display: flex; align-items: center; gap: 10px; font-family: Archivo, Arial, sans-serif; font-size: 21px; letter-spacing: -0.02em;"><svg width="32" height="32" viewBox="0 0 64 64" aria-hidden="true"><rect x="2" y="2" width="60" height="60" rx="14" fill="#2A1B5C"></rect><rect x="12" y="12" width="40" height="40" rx="7" fill="none" stroke="#fff" stroke-width="4"></rect><path d="M31.4 28.4H48A2 2 0 0 1 50 30.4V45A5 5 0 0 1 45 50H30.4A2 2 0 0 1 28.4 48V31.4A3 3 0 0 1 31.4 28.4Z" fill="#FF6B5A"></path></svg><span><b style="font-weight: 800;">Deep</b><span style="font-weight: 500;">Framework</span></span></div>
+        <div style="flex: 1 1 0; padding: 20px; background: #120C26; color: #FFFFFF; border-radius: 10px; display: flex; align-items: center; gap: 10px; font-family: Archivo, Arial, sans-serif; font-size: 21px; letter-spacing: -0.02em;"><svg width="32" height="32" viewBox="0 0 64 64" aria-hidden="true"><rect x="4" y="4" width="56" height="56" rx="12" fill="none" stroke="#fff" stroke-width="4"></rect><rect x="12" y="12" width="40" height="40" rx="7" fill="none" stroke="#fff" stroke-width="4"></rect><path d="M31.4 28.4H48A2 2 0 0 1 50 30.4V45A5 5 0 0 1 45 50H30.4A2 2 0 0 1 28.4 48V31.4A3 3 0 0 1 31.4 28.4Z" fill="#fff"></path></svg><span><b style="font-weight: 800;">Deep</b><span style="font-weight: 500;">Framework</span></span></div>
+      </div>
+      <p style="margin: 0; font-size: 14px; color: #5A5670;">Mark 32 px, gap 10 px, wordmark Archivo 21 px. Colour logo on light, white outline on dark. SVGs are in the design kit.</p>
+    </section>
+  </div>
+
+  <section style="background: #FFFFFF; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 12px;">
+    <h2 style="margin: 0; font-family: 'IBM Plex Mono', Menlo, monospace; font-weight: 400; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5A5670;">Suggested React components</h2>
+    <p style="margin: 0; font-size: 15px; color: #3A3650;">Header · Hero · ProjectBrief · SectionHead (title + intro) · ProblemList · SolutionGrid · IndustryCard · ProcessSteps · ExampleCard · Principles · TechGrid (violet band) · ContactForm · Footer. Each section reuses SectionHead and the same container. The contact form needs a form service before launch, and the email and phone are placeholders.</p>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1200,"height":1900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>
